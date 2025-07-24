@@ -22,10 +22,12 @@
     font-style: normal;
 }
 
+/* Design Started */
+
 #body {
-    max-width: 1140px;
-    margin: 0 auto;
+    margin: 0;
 }
+
 
 /* Header & Navbar */
 .head {
@@ -36,6 +38,7 @@
 }
 
 #nav-li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     gap: 48px;
     margin: 18px 0;
@@ -90,7 +93,6 @@
 
 .plants-container {
     gap: 49px;
-    margin-bottom: 210px;
 }
 
 .plants-content {
@@ -140,7 +142,8 @@
 /* FLower-Lover_Container */
 
 .f-lover-container {
-    margin-bottom: 133px;
+    padding-bottom: 133px;
+    padding-top: 210px;
 }
 
 .f-lover-img {
@@ -279,7 +282,99 @@
     color: #FFFFFF;
 }
 
-/* Universal Codes */
+
+/* Subscribe Container  */
+
+.sub-container {
+    position: relative;
+    width: 100%;
+    height: 533px;
+    background-image: url(/images/news-letter-bg.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    z-index: 1;
+}
+
+.sub-container::before {
+    content: '';
+    background-color: rgba(7, 51, 79, 0.4);
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.sub-head {
+    z-index: 2;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe {
+    z-index: 2;
+    width: 800px;
+}
+
+.subscribe input[type="email"] {
+    flex: 5;
+    border: none;
+    padding: 8px 20px;
+}
+
+.subs-btn {
+    flex: 1;
+    border: none;
+}
+
+/* Footer Container  */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    padding: 50px 0;
+}
+
+.logo-details {
+    width: 350px;
+}
+
+.logo-details img {
+    margin-bottom: 16px;
+}
+
+.navs-names {
+    gap: 32px;
+}
+
+.navs-names>a {
+    color: rgba(107, 114, 128, 1);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+
+.social {
+    justify-content: space-between;
+}
+
+.social img {
+    height: 36px;
+}
+
+
+
+
+/*-------------------
+-- Universal Codes --
+-------------------*/
+
+.middle {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
 .or-head {
     color: #E95A08;
@@ -458,4 +553,33 @@
         color: #FFFFFF;
         font-weight: 600;
     }
+
+    /* Subscribe Container  */
+
+    .sub-container {
+        background-size: auto;
+        background-position: center;
+        height: 276px;
+    }
+
+    .subscribe {
+        width: 321px;
+    }
+
+    .sub-head {
+        font-size: 1.25rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 50px 160px 50px 20px;
+    }
+
+    .social {
+        justify-content: start;
+        gap: 24px;
+    }
+
+
 }
