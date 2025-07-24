@@ -1,0 +1,85 @@
+/* All fonts & External hooks */
+
+/* Noto Serif Font  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-heading {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* Inter Font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#body {
+    margin: 0;
+}
+
+/* Header & Navbar */
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#nav-li {
+    display: flex;
+    gap: 48px;
+    margin: 18px 0;
+    padding: 0;
+}
+
+#nav-li>li {
+    list-style: none;
+}
+
+#nav-li>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-li>li:nth-child(2) a,
+#nav-li>li:nth-child(3) a {
+    color: #8987A1;
+}
+
+.nav-home {
+    color: #252432;
+    font-weight: 700;
+}
+
+.cart {
+    display: flex;
+    gap: 10px;
+}
+
+/* Universal Codes */
+
+/* Media Query */
+
+@media screen and (max-width:450px) {
+    .head-img>img {
+        width: 63px;
+    }
+
+    .nav-home,
+    .nav-s {
+        display: none;
+    }
+
+    .cart {
+        gap: 15px;
+    }
+}
